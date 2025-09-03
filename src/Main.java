@@ -54,8 +54,8 @@ public class Main {
         int age4 = 8;
         boolean kinderGarten = age4 > 2 && age4 <= 6;
         boolean school = age4 >= 7 && age4 <= 17;
-        boolean univercity = age4 >= 18 && age4 <= 24;
-        boolean work = age4 > 24;
+        boolean univercity = age4 >= 18 && age4 < 24;
+        boolean work = age4 >= 24;
         if (kinderGarten) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад.");
         } else if (school) {

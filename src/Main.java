@@ -52,9 +52,9 @@ public class Main {
 При выполнении каждого условия программа должна выводить в консоль сообщение в формате: «Если возраст человека равен …, то ему нужно ходить … (в зависимости от возраста дописать нужное)».*/
         System.out.println("Задание 4");
         int age4 = 8;
-        boolean kinderGarten = age4 > 2 && age4 < 6;
-        boolean school = age4 > 7 && age4 < 17;
-        boolean univercity = age4 > 18 && age4 < 24;
+        boolean kinderGarten = age4 > 2 && age4 <= 6;
+        boolean school = age4 >= 7 && age4 <= 17;
+        boolean univercity = age4 >= 18 && age4 <= 24;
         boolean work = age4 > 24;
         if (kinderGarten) {
             System.out.println("Если возраст человека равен " + age4 + ", то ему нужно ходить в детский сад.");
